@@ -2,16 +2,20 @@ body {
    margin: 0;
    padding: 0;
    /* background-color: black; */
+   display: flex;
+   flex-direction:column;
   font-family: sans-serif;
+  min-height: 100vh;
 
  }
 
- .header {
+ header {
    position: relative;
    height: 30vw;
    overflow: hidden;
  }
 
+ 
  .header-video {
    position: absolute;
    top: 50%;
@@ -20,21 +24,6 @@ body {
    min-width: 100%;
    min-height: 100%;
  }
-/* 
- .header-title {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   color: white;
-   font-size: 32px;
-   font-weight: bold;
-   text-align: center;
- }
-
- .header-title:hover {
-  background-position: 0 -100%;
-} */
 
 .header-title {
   position: absolute;
@@ -57,20 +46,25 @@ body {
   background-position: 0 -100%;
 }
 
- .body-images {
+.gallery {
+  flex: 1;
+} 
+ .gallery-images {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
    padding: 20px;
  }
 
- .body-image {
+ .gallery-image {
    width: 50%;
    height: auto;
    margin: 20px;
  }
 
  footer {
+  /* position: relative; */
+  bottom: 0;
   text-align: center;
   background-color: black;
   color: white;
