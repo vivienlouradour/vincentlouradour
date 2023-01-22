@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "thumbnail": "node ./thumbnail-maker/thumbnail-maker.js"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "image-thumbnail": "^1.0.15"
+  }
+}

@@ -1,4 +1,4 @@
 .DS_Store
 dist/
-assets/images/bank/
+src/assets/images/bank/
 node_modules/
