@@ -20,6 +20,8 @@ Algo : look for every picture in `/assets/images/gallery` folder, and creates a 
 
 - [x] Add a picture viewer 
 - [x] Add youtube link to "l'appel des grèves"
+- [ ] Split picture thumbs in 2 columns (one on mobile)
+- [ ] Change youtube thumbnail
 - [ ] Optimize banner video size / length
 - [ ] Optimize pictures size/loading
 - [ ] Fix banner title display on mobile 
