@@ -68,25 +68,40 @@ body {
 
  .gallery-images {
    display: grid;
-   justify-content: center;
-   /* padding: 20px; */
+   grid-template-columns: auto auto;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    padding: 10em;
  }
 
-
- .gallery-image {
-  /* width: 50%; */
-  height: auto;
-  margin: 20px;
+ 
+@media only screen and (max-width: 1400px) {
+  .gallery-images{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-row-gap: 100px;
+  }  
 }
 
- footer {
-  /* position: relative; */
+
+.gallery-image {
+  /* width: 50%; */
+  /* height: auto; */
+  /* height: 50k%; */
+
+  margin: 20px;
+  justify-self: safe center;
+}
+
+footer {
   bottom: 0;
   text-align: center;
   background-color: black;
   color: white;
   padding: 20px;
 }
+
 .copyright {
   font-size: 12px;
 }
@@ -101,6 +116,8 @@ h1 {
   font-size: 2.5vw;
   /* color: transparent; */
 }
+
+
 
 .youtube-video {
   margin: 3% 0;
@@ -119,4 +136,16 @@ h1 {
   aspect-ratio: 16 / 9;
   width: 70%;
   height: 100%;
+}
+
+.presentation-text {
+  margin: 10px 10%;
+  text-align: justify;
+  text-justify: auto;
+}
+
+.presentation-text-signature {
+  text-align: left;
+  margin-left: 85%;
+  margin-top: 3em;
 }
