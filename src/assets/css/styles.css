@@ -62,21 +62,17 @@ body {
   background-position: 0 -100%;
 }
 
-.gallery {
-  /* flex: 2; */
-} 
-
- .gallery-images {
+ .gallery {
    display: grid;
    grid-template-columns: auto auto;
     grid-row-gap: 40px;
     grid-column-gap: 40px;
-    padding: 10em;
+    padding : 0 10em;
  }
 
  
 @media only screen and (max-width: 1400px) {
-  .gallery-images{
+  .gallery{
     display: grid;
     grid-template-columns: 1fr;
     padding: 1em;
@@ -84,6 +80,9 @@ body {
   }  
 }
 
+.group-element{
+  margin : 5em 0;
+}
 
 .gallery-image {
   /* width: 50%; */
@@ -119,8 +118,9 @@ h1 {
 
 
 
+
 .youtube-video {
-  margin: 3% 0;
+  /* margin: 3% 0; */
   /* overflow:hidden; 
   padding-bottom:56.25%; 
   position:relative; 
