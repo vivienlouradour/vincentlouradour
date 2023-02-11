@@ -2,9 +2,12 @@
   "scripts": {
     "thumbnail": "node ./thumbnail-maker/thumbnail-maker.js"
   },
-  "dependencies": {
-  },
   "devDependencies": {
-    "image-thumbnail": "^1.0.15"
+    "compress-images": "^2.0.5",
+    "image-thumbnail": "^1.0.15",
+    "pngquant-bin": "^6.0.1"
+  },
+  "dependencies": {
+    "gifsicle": "^5.2.1"
   }
 }
