@@ -2,16 +2,15 @@ const fs = require('fs');
 const path = require('path');
 const imageThumbnail = require('image-thumbnail');
 const compress_images = require('compress-images');
+const sizeOf = require('image-size');
 
 const outputDirectory = 'src/assets/images/gallery/';
 const inputDirectory = 'src/assets/images/gallery/raw';
 const supportedExtensions = [
     'jpg'
 ];
-const thumbnailOptions = {
-    // width: 100, 
-    height: 400,
-}
+const thumbMaxWidth = 500;
+const thumbMaxHeight = 400;
 
 const isCorrectFormatAndNotThumbnail = (imagePath) => {
     isSupportedExtension = false;
@@ -22,8 +21,23 @@ const isCorrectFormatAndNotThumbnail = (imagePath) => {
 };
 
 const createThumbnail = (image) => {
+    let filePath = path.join(inputDirectory, image);
+    let buf = fs.readFileSync(filePath); 
+    const dimensions = sizeOf(buf);
+
     let thumbnailName = path.parse(image).name + '.thumb' + path.parse(image).ext;
     let thumbnailPath = path.join(outputDirectory, thumbnailName);
+    let thumbnailOptions;
+    if(dimensions.width >= dimensions.height){
+        thumbnailOptions = {
+            width: thumbMaxWidth
+        }
+    }
+    else{
+        thumbnailOptions = {
+            height: thumbMaxHeight
+        }
+    }
     imageThumbnail(path.join(inputDirectory, image), thumbnailOptions)
         .then(thumbnail => {
             fs.writeFileSync(thumbnailPath, thumbnail);
