@@ -27,5 +27,5 @@ Algo : look for every picture in `/assets/images/gallery` folder, and creates a 
 - [ ] Fix banner title display on mobile 
 - [x] Fix columns display
 - [ ] Check if columns display correctly on large devices
-- [ ] add text before video
-- [ ] title too big (cumul de l'oubli)
+- [x] add text before video
+- [x] title too big (cumul de l'oubli)
