@@ -3,7 +3,7 @@
 ## Hand deployment
 
 - `git clone | pull`
-- `docker build -t vincentlouradour`
+- `docker build -t vincentlouradour .`
 - if already a previous container running : 
   - `docker stop vincentlouradour_website`
   - `docker container rm vincentlouradour_website`
@@ -29,3 +29,10 @@ Algo : look for every picture in `/assets/images/gallery` folder, and creates a 
 - [ ] Check if columns display correctly on large devices
 - [x] add text before video
 - [x] title too big (cumul de l'oubli)
+- [x] line 3, right : rotate 90° horaire
+- [x] line 4 left : rotate 90° horaire
+- [x] line 6 left : cut
+- [x] line 8 left : cut wood
+- [ ] Test add text after video : 
+
+Je nome _amalgame_ ces petits "objets", qui sont gammes de l'âme, aussi.
