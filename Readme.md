@@ -33,6 +33,5 @@ Algo : look for every picture in `/assets/images/gallery` folder, and creates a 
 - [x] line 4 left : rotate 90° horaire
 - [x] line 6 left : cut
 - [x] line 8 left : cut wood
-- [ ] Test add text after video : 
-
-Je nome _amalgame_ ces petits "objets", qui sont gammes de l'âme, aussi.
+- [ ] Center correctly the grid
+- [ ] Make the grid 1 column on smartphones
