@@ -33,5 +33,5 @@ Algo : look for every picture in `/assets/images/gallery` folder, and creates a 
 - [x] line 4 left : rotate 90° horaire
 - [x] line 6 left : cut
 - [x] line 8 left : cut wood
-- [ ] Center correctly the grid
-- [ ] Make the grid 1 column on smartphones
+- [x] Center correctly the grid
+- [x] Make the grid 1 column on smartphones
