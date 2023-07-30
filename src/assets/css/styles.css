@@ -54,31 +54,8 @@ header {
   background-position: 0 -100%;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-row-gap: 40px;
-  grid-column-gap: 40px;
-  padding: 0 5em;
-}
-
-
-@media only screen and (max-width: 1400px) {
-  .gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 1em;
-    grid-row-gap: 100px;
-  }
-}
-
 .group-element {
-  margin: 5em 0;
-}
-
-.gallery-image {
-  margin: 20px;
-  justify-self: safe center;
+  margin: 4em 0;
 }
 
 footer {
@@ -128,7 +105,7 @@ h1 {
 
 
 
-/* Test grid */
+/* Image grid */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -136,31 +113,40 @@ h1 {
   justify-content: center;
 }
 
+
+
+.column img {
+  margin-top: 40px;
+  vertical-align: middle;
+  width: 80%;
+}
+
+.gallery-image{
+  text-align: center;
+}
+
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 30%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+  padding: 0 0px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .column {
-    flex: 50%;
-    max-width: 50%;
+    flex: 60%;
+    max-width: 60%;
   }
 }
 
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .column {
-    flex: 100%;
-    max-width: 100%;
+    flex: 80%;
+    max-width: 80%;
   }
 }
+
+
