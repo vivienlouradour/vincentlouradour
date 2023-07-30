@@ -7,7 +7,7 @@
 - if already a previous container running : 
   - `docker stop vincentlouradour_website`
   - `docker container rm vincentlouradour_website`
-- `docker run --name vincentlouradour_website -t -d -p 8080:80 vincentlouradour`
+- `docker run --restart always --name vincentlouradour_website -t -d -p 8080:80 vincentlouradour`
 
 ## Thumbnails
 
