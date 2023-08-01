@@ -1,2 +1,4 @@
 FROM nginx:alpine
-COPY src/ /usr/share/nginx/html
+
+# Copy sources and sitemap for google SEO
+COPY src/ sitemap.xml /usr/share/nginx/html
